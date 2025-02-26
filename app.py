@@ -9,9 +9,9 @@ st.title("Beta Distribution Visualization")
 st.sidebar.header("Parameters")
 
 # Define all sliders in the sidebar
-Nr = st.sidebar.slider("Nr", min_value=1, max_value=100, value=10, step=1)
+Nr = st.sidebar.slider("Nr", min_value=1, max_value=100, value=1, step=1)
 # Ne = st.sidebar.slider("Ne", min_value=0.1, max_value=5.0, value=1.0, step=0.1)
-MAX = st.sidebar.slider("MAX", min_value=1, max_value=100, value=50, step=1)
+MAX = st.sidebar.slider("MAX", min_value=1, max_value=100, value=90, step=1)
 initial_p = st.sidebar.slider("Prior probability of this action being relevant", min_value=0.0, max_value=1.0, value=0.5, step=0.1)
 n_successes = st.sidebar.slider("n_successes experienced by recommending this action", min_value=1, max_value=100, value=10, step=1)
 n_failures = st.sidebar.slider("n_failures experienced by recommending this action", min_value=1, max_value=100, value=10, step=1)
